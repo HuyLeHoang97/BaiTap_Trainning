@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Tahoma;
+    font-size: 12px;
+}
+ 
+.head{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("picNT.jpg");
+    height: 100px;
+    border: 1px solid #CDCDCD;
+    margin-bottom:5px;	
+	background-color: #666; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	
+}
+.head-text{
+	text-align: center;
+	position: absolute;
+	color: rgb(0, 239, 133);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: "Comic Sans MS";
+	font-size: 40px;
+}
+
+
+.head-link{
+     height: 300px;
+     line-height: 30px;
+     border: 1px solid #CDCDCD;     
+     margin-bottom:5px;
+     clear: both;
+	 transition: transform 2s ;	 
+	 
+}
+
+.head-link:hover{
+	transform: scale(1.3);
+}
+
+.content{
+    display: flex;
+}
+.content .content-left{
+    min-height: 400px;
+    border: 1px solid #CDCDCD;
+	float: left;
+	width: 50%;
+	background: rgb(236, 232, 255);
+	padding: 20px;
+	margin-bottom:5px;
+	 
+}
+.content .content-right{
+    min-height: 400px;
+    border: 1px solid #CDCDCD;
+	float: right;
+	width: 50%;
+	background: rgb(249, 255, 207);
+	padding: 20px;
+	margin-bottom:5px;
+
+}
+.footer{
+     height: 100px;
+     clear: both;
+     border: 1px solid #CDCDCD;
+     background-color: rgb(201, 211, 246);
+	 font-size:15px;
+}
+
+.size
+{
+	font-size: 20px;
+}
+
+#foot
+{
+	font-size:20px;
+	color:red;
+	text-align:center;
+}
+
+.trailer {
+    text-align: center;
+}
+
+.trailer button {
+    background-color: rgb(72, 75, 221);
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px;
+}
+
+.trailer button:hover {
+    background-color: aqua;
+}
+
+#media {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+
+}
+
+#media.show {
+    opacity: 2;
+    transition: opacity 1s ease-in;
+    pointer-events: initial;
+}
+
+#media iframe {
+    width: inherit;
+    height: inherit;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+	.head, .head-text, .head-link, .content .content-left, .content .content-right, .footer {
+		width:100%;
+	}
+   .content {
+        display: block;
+    }
+
+
+@keyframes zoom {
+    0% {
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1)
+    }
+    50% {
+        transform: scale(2, 2);
+        -webkit-transform: scale(2, 2)
+    }
+    100% {
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1)
+    }
+}
+
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
